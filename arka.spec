@@ -47,14 +47,15 @@ cp arka.1* $RPM_BUILD_ROOT/%_mandir/man1
 cp arkarc $RPM_BUILD_ROOT/etc/arkarc
 
 # menu
-install -d $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}):command="arka"\
-needs="x11"\
-section="Applications/Sciences/Chemistry"\
-title="Arka"\
-icon="chemistry_section.png"\
-longtitle="GUI for Genpak"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=arka
+Categories=Science;Chemistry;
+Name=Arka
+Icon=chemistry_section
+Comment=GUI for Genpak
 EOF
 
 %post
@@ -73,5 +74,5 @@ rm -fr $RPM_BUILD_ROOT
 %_bindir/%name
 %_iconsdir/%{name}*
 %_mandir/man1/%{name}*
-%_menudir/%name
+%{_datadir}/applications/mandriva-%name.desktop
 
