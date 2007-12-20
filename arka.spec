@@ -10,6 +10,7 @@ License: GPL
 Group: Sciences/Chemistry
 URL: http://www.bioinformatics.org/genpak
 Source: %name-%version.tar.bz2
+BuildRoot: %_tmppath/%name-root
 BuildRequires: libgtk+-devel
 Requires: gp
 
