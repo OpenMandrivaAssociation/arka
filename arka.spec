@@ -6,10 +6,11 @@ Summary: GUI for Genpak (gp) set of bioinformatics utilities
 Name: %name
 Version: %version
 Release: %release
-License: GPL
+License: GPLv2
 Group: Sciences/Chemistry
 URL: http://www.bioinformatics.org/genpak
 Source: %name-%version.tar.bz2
+Patch0: %{name}-0.11-fix-overlinking.patch.bz2
 BuildRoot: %_tmppath/%name-root
 BuildRequires: libgtk+-devel
 Requires: gp
@@ -33,9 +34,10 @@ but doesn't need GNOME. Also, it is small and quick.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
-%make
+%make LIBDIR=%{_libdir}
 
 %install
 mkdir -p $RPM_BUILD_ROOT/%_bindir
