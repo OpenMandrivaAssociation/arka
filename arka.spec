@@ -1,6 +1,6 @@
 %define name arka
 %define version 0.11
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary: GUI for Genpak (gp) set of bioinformatics utilities
 Name: %name
