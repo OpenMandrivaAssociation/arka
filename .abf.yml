@@ -1,2 +1,3 @@
 sources:
-  "arka-0.11.tar.bz2:"	3434c3eec81493903e1aea1654996e158641187b
+  "arka-0.11-fix-overlinking.patch.bz2": c84cc546c2d89bc0326e74ca2e358e94bb081767
+  "arka-0.11.tar.bz2": 3434c3eec81493903e1aea1654996e158641187b

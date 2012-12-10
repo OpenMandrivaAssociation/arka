@@ -83,3 +83,42 @@ rm -fr $RPM_BUILD_ROOT
 %_mandir/man1/%{name}*
 %{_datadir}/applications/mandriva-%name.desktop
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.11-5mdv2011.0
++ Revision: 616603
+- the mass rebuild of 2010.0 packages
+
+* Tue May 19 2009 Jérôme Brenier <incubusss@mandriva.org> 0.11-4mdv2010.0
++ Revision: 377637
++ rebuild (emptylog)
+
+* Tue May 19 2009 Jérôme Brenier <incubusss@mandriva.org> 0.11-3mdv2010.0
++ Revision: 377634
+- fix license (GPLv2)
+- fix overlinking (patch added)
+
+* Thu Jun 12 2008 Pixel <pixel@mandriva.com> 0.11-3mdv2009.0
++ Revision: 218430
+- rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Tue Dec 18 2007 Thierry Vignaud <tv@mandriva.org> 0.11-3mdv2008.1
++ Revision: 132148
+- auto-convert XDG menu entry
+- kill re-definition of %%buildroot on Pixel's request
+- import arka
+
+
+* Thu Jan 05 2005 Lenny Cartier <lenny@mandriva.com> 0.11-3mdk
+- rebuild
+
+* Mon Feb 23 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.11-2mdk
+- rebuild
+
+* Wed Jan 08 2002 Lenny Cartier <lenny@mandrakesoft.com> 0.11-1mdk
+- from Austin Acton <aacton@yorku.ca> :
+	- initial package for Mandrake 9
