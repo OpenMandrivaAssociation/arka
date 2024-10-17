@@ -8,7 +8,7 @@ Version: %version
 Release: %release
 License: GPLv2
 Group: Sciences/Chemistry
-URL: http://www.bioinformatics.org/genpak
+URL: https://www.bioinformatics.org/genpak
 Source: %name-%version.tar.bz2
 Patch0: %{name}-0.11-fix-overlinking.patch.bz2
 BuildRoot: %_tmppath/%name-root
